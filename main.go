@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 	"os"
@@ -42,7 +42,7 @@ func main() {
 	}
 	defer configFile.Close()
 
-	configData, err := ioutil.ReadAll(configFile)
+	configData, err := io.ReadAll(configFile)
 	if err != nil {
 		log.Fatalf("unable to read configuration file: %s", err)
 	}
