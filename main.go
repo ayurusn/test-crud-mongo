@@ -172,7 +172,7 @@ func updateObject(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// check new object fields for nil
+	// check updated object fields for nil
 	// if nil then get current value of the field
 	if updateObj.Name == nil {
 		updateObj.Name = currentObj.Name

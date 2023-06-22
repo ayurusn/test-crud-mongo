@@ -1,3 +1,5 @@
+##Curl скрипты для взаимодействия с MongoDB через mongo-crud
+
 # Получить список всех объектов
 curl http://localhost:8000/objects/
 
